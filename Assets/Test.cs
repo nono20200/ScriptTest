@@ -17,20 +17,13 @@ public class Test : MonoBehaviour {
 
 		for (int i = 0; i < 5; i++)
 		{
-			for (int j = i + 1; j < 5; j++)
-			{
-				if (array[i] > array[j])
-				{
-					int a = array[i];
-					array[i] = array[j];
-					array[j] = a;
-
-				}
-			}
-
 			Debug.Log(array[i]);
 		}
 
+        for (int j = 4; j >= 0; j--)
+        {
+			Debug.Log(array[j]);
+        }
 	}
 
 	// Update is called once per frame
